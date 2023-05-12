@@ -26,6 +26,7 @@ RUN python -m venv /py && \
         --no-create-home \
         django-user
 
+# add /py/bin to the system PATH
 ENV PATH="/py/bin:$PATH"
 
 USER django-user
